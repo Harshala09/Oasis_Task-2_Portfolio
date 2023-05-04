@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <a href="#" ><img src="png" class="logo" alt="" width="100"></a>
+
+        <div class="fa-sharp fa-solid fa-bars" id="menu-icon"></div>
+ 
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Fields">Fields</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+        <div class="home-img">
+            <img src="pic.jpg" alt="">
+        </div>
+        <div class="home-text">
+            <span>Hello,</span>
+            <h1>It's Areens University</h1>
+            <h2>Open for all.</h2>
+            <p>“Focus on your goal.<br> Don’t look in any direction but ahead.”</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+ 
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Us</h2>
+            <span>Introduction</span>
+        </div>
+
+        <div class="about-container">
+            <div class="about-img">
+                <img src="pic1.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <p>Hello! It's Areens university. <br>thing live on the
+                    Education. Please come ahead.<br>
+                   Your time is limited,<br> so don’t waste it living someone else’s life. </p>
+                <div class="information">
+                   
+                    <div class="info-box">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Harshala Patil</span>
+                    </div>
+                    
+                    <div class="info-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 7218944327</span>
+                    </div>
+                    
+                    <div class="info-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Harshu09@gmail.com</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">Download Info</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fields -->
+    <section class="Fields" id="Fields">
+        <div class="heading">
+            <h2>Fields</h2>
+            <span>info</span>
+        </div>
+        
+        <div class="Fields-container">
+            <div class="bars">
+              
+                <div class="bars-box">
+                    <h3>Management</h3>
+                    <span>94%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar management-bar"></div>
+                </div>
+                
+                <div class="bars-box">
+                    <h3>Engineering</h3>
+                    <span>84%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar engineering-bar"></div>
+                </div>
+              
+                <div class="bars-box">
+                    <h3>Architecture</h3>
+                    <span>74%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar architecture-bar"></div>
+                </div>
+                
+                <div class="bars-box">
+                    <h3>BAMS</h3>
+                    <span>50%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar bams-bar"></div>
+                </div>
+            </div>
+            <div class="Fields-img">
+                <img src="s1.jpg" alt="">
+            </div>
+        </div>
+ 
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <span>Connect With Us</span>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Your Name">
+                <input type="email" name="" id="" placeholder="Your Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+                <input type="button" value="Send" class="contact-button">
+            </form>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>Create By <a href="">AREENS</a> | THANK YOU.</p>
+    </div>
+ 
+
+</body>
+
+<script>
+    let header = document.querySelector('header');
+    let menu = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+     
+     
+    window.addEventListener('scroll', () => {
+        header.classList.toggle('shadow', window.scrollY > 0);
+    });
+     
+    menu.onclick = () => {
+        navbar.classList.toggle('active');
+    }
+    window.onscroll = () => {
+        navbar.classList.remove('active');
+    }
+</script>
+</html>
